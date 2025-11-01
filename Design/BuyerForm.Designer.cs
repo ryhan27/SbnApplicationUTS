@@ -34,142 +34,160 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            txtBuyerId = new TextBox();
-            txtBuyerName = new TextBox();
+            txtCode = new TextBox();
+            txtName = new TextBox();
             txtEmail = new TextBox();
-            txtPhoneNumber = new TextBox();
+            txtPhone = new TextBox();
             txtAddress = new TextBox();
             btnAddBuyer = new Button();
             btnUpdate = new Button();
             btnDelete = new Button();
             btnClear = new Button();
             dgvBuyer = new DataGridView();
+            btnBack = new Button();
+            label7 = new Label();
+            label8 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvBuyer).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Showcard Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(442, 9);
+            label1.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(49, 84);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(177, 18);
+            label1.Size = new Size(117, 28);
             label1.TabIndex = 0;
-            label1.Text = "BUYER MANAGEMENT";
+            label1.Text = "Buyer Form";
             label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(39, 76);
+            label2.Location = new Point(49, 130);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(67, 20);
+            label2.Size = new Size(103, 25);
             label2.TabIndex = 1;
-            label2.Text = "Buyer Id ";
+            label2.Text = "Buyer Code";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(39, 114);
+            label3.Location = new Point(49, 177);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(90, 20);
+            label3.Size = new Size(108, 25);
             label3.TabIndex = 2;
             label3.Text = "Buyer Name";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(39, 152);
+            label4.Location = new Point(49, 225);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(50, 20);
+            label4.Size = new Size(59, 25);
             label4.TabIndex = 3;
             label4.Text = "Email ";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(39, 193);
+            label5.Location = new Point(49, 276);
+            label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(108, 20);
+            label5.Size = new Size(132, 25);
             label5.TabIndex = 4;
             label5.Text = "Phone Number";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(39, 240);
+            label6.Location = new Point(49, 335);
+            label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(62, 20);
+            label6.Size = new Size(77, 25);
             label6.TabIndex = 5;
             label6.Text = "Address";
             // 
-            // txtBuyerId
+            // txtCode
             // 
-            txtBuyerId.Location = new Point(182, 76);
-            txtBuyerId.Name = "txtBuyerId";
-            txtBuyerId.Size = new Size(190, 27);
-            txtBuyerId.TabIndex = 6;
+            txtCode.Location = new Point(208, 124);
+            txtCode.Margin = new Padding(4, 4, 4, 4);
+            txtCode.Name = "txtCode";
+            txtCode.Size = new Size(314, 31);
+            txtCode.TabIndex = 6;
             // 
-            // txtBuyerName
+            // txtName
             // 
-            txtBuyerName.Location = new Point(182, 114);
-            txtBuyerName.Name = "txtBuyerName";
-            txtBuyerName.Size = new Size(190, 27);
-            txtBuyerName.TabIndex = 7;
+            txtName.Location = new Point(208, 174);
+            txtName.Margin = new Padding(4, 4, 4, 4);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(314, 31);
+            txtName.TabIndex = 7;
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(179, 154);
+            txtEmail.Location = new Point(208, 219);
+            txtEmail.Margin = new Padding(4, 4, 4, 4);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(193, 27);
+            txtEmail.Size = new Size(314, 31);
             txtEmail.TabIndex = 8;
             // 
-            // txtPhoneNumber
+            // txtPhone
             // 
-            txtPhoneNumber.Location = new Point(182, 193);
-            txtPhoneNumber.Name = "txtPhoneNumber";
-            txtPhoneNumber.Size = new Size(190, 27);
-            txtPhoneNumber.TabIndex = 9;
+            txtPhone.Location = new Point(208, 276);
+            txtPhone.Margin = new Padding(4, 4, 4, 4);
+            txtPhone.Name = "txtPhone";
+            txtPhone.Size = new Size(314, 31);
+            txtPhone.TabIndex = 9;
             // 
             // txtAddress
             // 
-            txtAddress.Location = new Point(179, 233);
+            txtAddress.Location = new Point(208, 329);
+            txtAddress.Margin = new Padding(4, 4, 4, 4);
             txtAddress.Name = "txtAddress";
-            txtAddress.Size = new Size(193, 27);
+            txtAddress.Size = new Size(314, 31);
             txtAddress.TabIndex = 10;
             // 
             // btnAddBuyer
             // 
-            btnAddBuyer.Location = new Point(39, 289);
+            btnAddBuyer.Location = new Point(49, 396);
+            btnAddBuyer.Margin = new Padding(4, 4, 4, 4);
             btnAddBuyer.Name = "btnAddBuyer";
-            btnAddBuyer.Size = new Size(94, 29);
+            btnAddBuyer.Size = new Size(118, 36);
             btnAddBuyer.TabIndex = 11;
-            btnAddBuyer.Text = "Add Buyer";
+            btnAddBuyer.Text = "Add";
             btnAddBuyer.UseVisualStyleBackColor = true;
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(139, 289);
+            btnUpdate.Location = new Point(174, 396);
+            btnUpdate.Margin = new Padding(4, 4, 4, 4);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(94, 29);
+            btnUpdate.Size = new Size(118, 36);
             btnUpdate.TabIndex = 12;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = true;
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(239, 289);
+            btnDelete.Location = new Point(299, 396);
+            btnDelete.Margin = new Padding(4, 4, 4, 4);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(94, 29);
+            btnDelete.Size = new Size(118, 36);
             btnDelete.TabIndex = 13;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(339, 289);
+            btnClear.Location = new Point(424, 396);
+            btnClear.Margin = new Padding(4, 4, 4, 4);
             btnClear.Name = "btnClear";
-            btnClear.Size = new Size(94, 29);
+            btnClear.Size = new Size(118, 36);
             btnClear.TabIndex = 14;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = true;
@@ -177,33 +195,69 @@
             // dgvBuyer
             // 
             dgvBuyer.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvBuyer.Location = new Point(488, 72);
+            dgvBuyer.Location = new Point(552, 130);
+            dgvBuyer.Margin = new Padding(4, 4, 4, 4);
             dgvBuyer.Name = "dgvBuyer";
             dgvBuyer.RowHeadersWidth = 51;
-            dgvBuyer.Size = new Size(508, 257);
+            dgvBuyer.Size = new Size(513, 321);
             dgvBuyer.TabIndex = 15;
+            // 
+            // btnBack
+            // 
+            btnBack.Location = new Point(49, 477);
+            btnBack.Margin = new Padding(4);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(118, 36);
+            btnBack.TabIndex = 16;
+            btnBack.Text = "Back";
+            btnBack.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(552, 84);
+            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(111, 28);
+            label7.TabIndex = 17;
+            label7.Text = "Buyer Data";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(359, 27);
+            label8.Name = "label8";
+            label8.Size = new Size(316, 38);
+            label8.TabIndex = 18;
+            label8.Text = "🏦  SBN APPLICATION";
             // 
             // BuyerForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1042, 494);
+            ClientSize = new Size(1078, 544);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(btnBack);
             Controls.Add(dgvBuyer);
             Controls.Add(btnClear);
             Controls.Add(btnDelete);
             Controls.Add(btnUpdate);
             Controls.Add(btnAddBuyer);
             Controls.Add(txtAddress);
-            Controls.Add(txtPhoneNumber);
+            Controls.Add(txtPhone);
             Controls.Add(txtEmail);
-            Controls.Add(txtBuyerName);
-            Controls.Add(txtBuyerId);
+            Controls.Add(txtName);
+            Controls.Add(txtCode);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "BuyerForm";
             Text = "BuyerForm";
             Load += BuyerForm_Load;
@@ -220,15 +274,18 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private TextBox txtBuyerId;
-        private TextBox txtBuyerName;
+        private TextBox txtCode;
+        private TextBox txtName;
         private TextBox txtEmail;
-        private TextBox txtPhoneNumber;
+        private TextBox txtPhone;
         private TextBox txtAddress;
         private Button btnAddBuyer;
         private Button btnUpdate;
         private Button btnDelete;
         private Button btnClear;
         private DataGridView dgvBuyer;
+        private Button btnBack;
+        private Label label7;
+        private Label label8;
     }
 }

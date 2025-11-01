@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SbnApplication2.Design
+namespace SbnApplicationUTS.Design
 {
-    public partial class SbnForm: Form
+    public partial class AssetForm : Form
     {
-        public SbnForm()
+        public AssetForm()
         {
             InitializeComponent();
-        }
-
-        internal void setVisible(bool v)
-        {
-            throw new NotImplementedException();
         }
     }
 }

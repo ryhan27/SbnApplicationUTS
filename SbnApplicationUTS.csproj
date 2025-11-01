@@ -11,6 +11,7 @@
   <ItemGroup>
     <Compile Remove="Data\AppDbContext.cs" />
     <Compile Remove="Service\BuyerService.cs" />
+    <Compile Remove="Service\SBNService.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +21,7 @@
   <ItemGroup>
     <None Include="Data\AppDbContext.cs" />
     <None Include="Service\BuyerService.cs" />
+    <None Include="Service\SBNService.cs" />
   </ItemGroup>
 
   <ItemGroup>

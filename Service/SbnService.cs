@@ -1,19 +1,19 @@
-﻿
-using SbnApplicationUTS.Model;
+﻿using SbnApplicationUTS.Data;
+using SbnApplicationUTS.Models;
 
-namespace SbnApplicationUTS.Service
+namespace SbnApplicationUTS.Services
 {
-    public class SbnService
+    public class SBNService
     {
         private readonly AppDbContext _db;
-        public SbnService(AppDbContext db) => _db = db;
+        public SBNService(AppDbContext db) => _db = db;
         public List<object> SetDropdown()
         {
             var list = _db.SBNs.OrderBy(m => m.Nama_SBN)
                 .Select(m => new
                 {
                     m.Id,
-                    DisplayName = m.BuyerId + " - " + m.Nama_SBN
+                    DisplayName = m.Id + " - " + m.Nama_SBN
                 })
                 .ToList<object>();
             return list;
@@ -26,13 +26,13 @@ namespace SbnApplicationUTS.Service
 
         public List<SBN> SetGrid()
         {
-            return
-                _db.SBNs.OrderByDescending(m => m.ModDate).ToList<SBN>();
+            return 
+                _db.SBNs.OrderByDescending(m=> m.ModDate).ToList<SBN>();
         }
 
-        public async void Update(SBN Sbn)
+        public async void Update(SBN SBN)
         {
-            _db.Buyers.Update(Sbn);
+            _db.SBNs.Update(SBN);
             await _db.SaveChangesAsync();
         }
     }

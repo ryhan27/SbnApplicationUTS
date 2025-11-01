@@ -17,6 +17,11 @@ namespace SampleUTS.Design
             InitializeComponent();
         }
 
+        internal void setVisible(bool v)
+        {
+            throw new NotImplementedException();
+        }
+
         private void BuyerForm_Load(object sender, EventArgs e)
         {
 
