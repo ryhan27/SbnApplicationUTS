@@ -34,27 +34,28 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
+            txtBuyerId = new TextBox();
+            txtBuyerName = new TextBox();
+            txtEmail = new TextBox();
+            txtPhoneNumber = new TextBox();
+            txtAddress = new TextBox();
             btnAddBuyer = new Button();
             btnUpdate = new Button();
             btnDelete = new Button();
             btnClear = new Button();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            dgvBuyer = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvBuyer).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Showcard Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(442, 9);
             label1.Name = "label1";
-            label1.Size = new Size(138, 20);
+            label1.Size = new Size(177, 18);
             label1.TabIndex = 0;
-            label1.Text = "Buyer Management";
+            label1.Text = "BUYER MANAGEMENT";
             label1.Click += label1_Click;
             // 
             // label2
@@ -102,40 +103,40 @@
             label6.TabIndex = 5;
             label6.Text = "Address";
             // 
-            // textBox1
+            // txtBuyerId
             // 
-            textBox1.Location = new Point(182, 76);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(190, 27);
-            textBox1.TabIndex = 6;
+            txtBuyerId.Location = new Point(182, 76);
+            txtBuyerId.Name = "txtBuyerId";
+            txtBuyerId.Size = new Size(190, 27);
+            txtBuyerId.TabIndex = 6;
             // 
-            // textBox2
+            // txtBuyerName
             // 
-            textBox2.Location = new Point(182, 114);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(190, 27);
-            textBox2.TabIndex = 7;
+            txtBuyerName.Location = new Point(182, 114);
+            txtBuyerName.Name = "txtBuyerName";
+            txtBuyerName.Size = new Size(190, 27);
+            txtBuyerName.TabIndex = 7;
             // 
-            // textBox3
+            // txtEmail
             // 
-            textBox3.Location = new Point(179, 154);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(193, 27);
-            textBox3.TabIndex = 8;
+            txtEmail.Location = new Point(179, 154);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(193, 27);
+            txtEmail.TabIndex = 8;
             // 
-            // textBox4
+            // txtPhoneNumber
             // 
-            textBox4.Location = new Point(182, 193);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(190, 27);
-            textBox4.TabIndex = 9;
+            txtPhoneNumber.Location = new Point(182, 193);
+            txtPhoneNumber.Name = "txtPhoneNumber";
+            txtPhoneNumber.Size = new Size(190, 27);
+            txtPhoneNumber.TabIndex = 9;
             // 
-            // textBox5
+            // txtAddress
             // 
-            textBox5.Location = new Point(179, 233);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(193, 27);
-            textBox5.TabIndex = 10;
+            txtAddress.Location = new Point(179, 233);
+            txtAddress.Name = "txtAddress";
+            txtAddress.Size = new Size(193, 27);
+            txtAddress.TabIndex = 10;
             // 
             // btnAddBuyer
             // 
@@ -173,30 +174,30 @@
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgvBuyer
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(488, 72);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(508, 257);
-            dataGridView1.TabIndex = 15;
+            dgvBuyer.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvBuyer.Location = new Point(488, 72);
+            dgvBuyer.Name = "dgvBuyer";
+            dgvBuyer.RowHeadersWidth = 51;
+            dgvBuyer.Size = new Size(508, 257);
+            dgvBuyer.TabIndex = 15;
             // 
             // BuyerForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1042, 494);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvBuyer);
             Controls.Add(btnClear);
             Controls.Add(btnDelete);
             Controls.Add(btnUpdate);
             Controls.Add(btnAddBuyer);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtAddress);
+            Controls.Add(txtPhoneNumber);
+            Controls.Add(txtEmail);
+            Controls.Add(txtBuyerName);
+            Controls.Add(txtBuyerId);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -206,7 +207,7 @@
             Name = "BuyerForm";
             Text = "BuyerForm";
             Load += BuyerForm_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvBuyer).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -219,15 +220,15 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
+        private TextBox txtBuyerId;
+        private TextBox txtBuyerName;
+        private TextBox txtEmail;
+        private TextBox txtPhoneNumber;
+        private TextBox txtAddress;
         private Button btnAddBuyer;
         private Button btnUpdate;
         private Button btnDelete;
         private Button btnClear;
-        private DataGridView dataGridView1;
+        private DataGridView dgvBuyer;
     }
 }

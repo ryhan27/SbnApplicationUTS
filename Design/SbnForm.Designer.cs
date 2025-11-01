@@ -18,7 +18,10 @@
                 components.Dispose();
             }
             base.Dispose(disposing);
-        }
+            g && (components != null))
+            {
+                components.Dispose();
+            }
 
         #region Windows Form Designer generated code
 
