@@ -1,4 +1,4 @@
-﻿namespace SampleUTS
+﻿namespace SbnApplicationUTS
 {
     partial class HomeForm
     {

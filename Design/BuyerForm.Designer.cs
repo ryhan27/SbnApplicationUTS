@@ -1,4 +1,4 @@
-﻿namespace SampleUTS.Design
+﻿namespace SbnApplicationUTS.Design
 {
     partial class BuyerForm
     {
@@ -11,14 +11,14 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+        //protected override void Dispose(bool disposing)
+        //{
+        //    if (disposing && (components != null))
+        //    {
+        //        components.Dispose();
+        //    }
+        //    base.Dispose(disposing);
+        //}
 
         #region Windows Form Designer generated code
 
@@ -48,7 +48,7 @@
             label7 = new Label();
             label8 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvBuyer).BeginInit();
-            SuspendLayout();
+            //SuspendLayout();
             // 
             // label1
             // 
@@ -60,7 +60,7 @@
             label1.Size = new Size(117, 28);
             label1.TabIndex = 0;
             label1.Text = "Buyer Form";
-            label1.Click += label1_Click;
+            //label1.Click += label1_Click;
             // 
             // label2
             // 

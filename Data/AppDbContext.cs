@@ -16,9 +16,7 @@ namespace SbnApplicationUTS.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-			optionsBuilder.UseNpgsql("Host=localhost;Port=5432;" +
-				"Database=vb2_sbn;" + 
-				"Username=postgres;Password=");
+			optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=vb2_sbn;Username=postgres;Password=kelompok_sbn;");
         }
 
     }

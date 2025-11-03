@@ -1,3 +1,5 @@
+using SbnApplicationUTS;
+
 namespace SampleUTS
 {
     internal static class Program

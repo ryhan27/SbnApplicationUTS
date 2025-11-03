@@ -19,7 +19,7 @@ namespace SbnApplication2.Design
 
         internal void setVisible(bool v)
         {
-            throw new NotImplementedException();
+            this.Visible = v;
         }
     }
 }

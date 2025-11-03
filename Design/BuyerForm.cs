@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SampleUTS.Design
+namespace SbnApplicationUTS.Design
 {
     public partial class BuyerForm : Form
     {
@@ -19,7 +19,7 @@ namespace SampleUTS.Design
 
         internal void setVisible(bool v)
         {
-            throw new NotImplementedException();
+            this.Visible = v;
         }
 
         private void BuyerForm_Load(object sender, EventArgs e)

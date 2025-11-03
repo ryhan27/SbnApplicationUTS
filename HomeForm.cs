@@ -1,8 +1,8 @@
 
-using SampleUTS.Design;
+using SbnApplicationUTS.Design;
 using SbnApplication2.Design;
 
-namespace SampleUTS
+namespace SbnApplicationUTS
 {
     public partial class HomeForm : Form
     {
