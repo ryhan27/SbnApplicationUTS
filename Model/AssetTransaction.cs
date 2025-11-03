@@ -8,14 +8,16 @@ namespace SbnApplicationUTS.Model
 {
     public class AssetTransaction
     {
-        public int Id_aset { get; set; }
-        public string Name { get; set; }
+        public int Kode_Asset { get; set; }
+        public int Kode_Buyer { get; set; }
+        public int Kode_SBN { get; set; }
+        public string Nama_SBN { get; set; }
+        public string Nama_Buyer { get; set; }
         public string Jenis_sbn { get; set; }
-        public DateTime CreatedAt { get; set; }
+        public DateTime Tanggal_Transaksi { get; set; }
         public string Jumlah { get; set; }
-        public int Harga { get; set; }
-        public int Total { get; set; }
-        public bool Jenis_transaksi { get; set; }
+        public int Harga_Unit { get; set; }
+        public int Total_Harga { get; set; }
 
     }
 }
