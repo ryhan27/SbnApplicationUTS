@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace SbnApplication2.Design
 {
-    public partial class SbnForm: Form
+    public partial class SbnForm : Form
     {
         public SbnForm()
         {
@@ -20,6 +20,11 @@ namespace SbnApplication2.Design
         internal void setVisible(bool v)
         {
             this.Visible = v;
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

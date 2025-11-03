@@ -25,10 +25,10 @@
 
         #region Windows Form Designer generated code
 
-            /// <summary>
-            /// Required method for Designer support - do not modify
-            /// the contents of this method with the code editor.
-            /// </summary>
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
             label1 = new Label();
@@ -55,6 +55,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
             label1.Location = new Point(364, 30);
             label1.Name = "label1";
             label1.Size = new Size(316, 38);
@@ -65,6 +66,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
             label2.Location = new Point(35, 83);
             label2.Name = "label2";
             label2.Size = new Size(112, 30);
@@ -74,6 +76,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = Color.White;
             label3.Location = new Point(35, 136);
             label3.Name = "label3";
             label3.Size = new Size(92, 25);
@@ -83,6 +86,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.ForeColor = Color.White;
             label4.Location = new Point(35, 200);
             label4.Name = "label4";
             label4.Size = new Size(97, 25);
@@ -92,6 +96,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.ForeColor = Color.White;
             label5.Location = new Point(35, 262);
             label5.Name = "label5";
             label5.Size = new Size(49, 25);
@@ -101,6 +106,7 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.ForeColor = Color.White;
             label6.Location = new Point(35, 324);
             label6.Name = "label6";
             label6.Size = new Size(86, 25);
@@ -137,7 +143,10 @@
             // 
             // btnAdd
             // 
-            btnAdd.BackColor = Color.White;
+            btnAdd.BackColor = Color.FromArgb(45, 45, 45);
+            btnAdd.FlatAppearance.BorderSize = 0;
+            btnAdd.FlatStyle = FlatStyle.Flat;
+            btnAdd.ForeColor = Color.White;
             btnAdd.Location = new Point(42, 394);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(90, 34);
@@ -147,39 +156,55 @@
             // 
             // btnUpdate
             // 
+            btnUpdate.BackColor = Color.FromArgb(45, 45, 45);
+            btnUpdate.FlatAppearance.BorderSize = 0;
+            btnUpdate.FlatStyle = FlatStyle.Flat;
+            btnUpdate.ForeColor = Color.White;
             btnUpdate.Location = new Point(151, 394);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(90, 34);
             btnUpdate.TabIndex = 11;
             btnUpdate.Text = "Update";
-            btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.UseVisualStyleBackColor = false;
             // 
             // btnDelete
             // 
+            btnDelete.BackColor = Color.FromArgb(45, 45, 45);
+            btnDelete.FlatAppearance.BorderSize = 0;
+            btnDelete.FlatStyle = FlatStyle.Flat;
+            btnDelete.ForeColor = Color.White;
             btnDelete.Location = new Point(263, 394);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(90, 34);
             btnDelete.TabIndex = 12;
             btnDelete.Text = "Delete";
-            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.UseVisualStyleBackColor = false;
             // 
             // btnClear
             // 
+            btnClear.BackColor = Color.FromArgb(45, 45, 45);
+            btnClear.FlatAppearance.BorderSize = 0;
+            btnClear.FlatStyle = FlatStyle.Flat;
+            btnClear.ForeColor = Color.White;
             btnClear.Location = new Point(376, 394);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(90, 34);
             btnClear.TabIndex = 13;
             btnClear.Text = "Clear";
-            btnClear.UseVisualStyleBackColor = true;
+            btnClear.UseVisualStyleBackColor = false;
             // 
             // btnBack
             // 
+            btnBack.BackColor = Color.FromArgb(45, 45, 45);
+            btnBack.FlatAppearance.BorderSize = 0;
+            btnBack.FlatStyle = FlatStyle.Flat;
+            btnBack.ForeColor = Color.White;
             btnBack.Location = new Point(42, 484);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(90, 34);
             btnBack.TabIndex = 14;
             btnBack.Text = "Back";
-            btnBack.UseVisualStyleBackColor = true;
+            btnBack.UseVisualStyleBackColor = false;
             // 
             // dataGridSBN
             // 
@@ -194,16 +219,19 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.White;
             label7.Location = new Point(512, 83);
             label7.Name = "label7";
             label7.Size = new Size(97, 28);
             label7.TabIndex = 16;
             label7.Text = "SBN Data";
+            label7.Click += label7_Click;
             // 
             // SbnForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(30, 30, 30);
             ClientSize = new Size(1078, 544);
             Controls.Add(label7);
             Controls.Add(dataGridSBN);

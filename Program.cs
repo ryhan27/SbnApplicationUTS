@@ -1,6 +1,6 @@
 using SbnApplicationUTS;
 
-namespace SampleUTS
+namespace SbnApplicationUTS
 {
     internal static class Program
     {

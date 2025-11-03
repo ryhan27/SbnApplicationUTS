@@ -1,23 +1,26 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using SbnApplicationUTS.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace SbnApplicationUTS.Data
-{ 
-    public class AppDbContext : DbContext
+{
+    class AppDbContext : DbContext
     {
-        public DbSet<Buyer> Buyers => Set<Buyer>();
-        public DbSet<SBN> SBNs => Set<SBN>();
-
-        public DbSet<Asset> Assets => Set<Asset>();
-        
+        public DbSet<BuyerMaster> BuyerMasters { get; set; }
+        public DbSet<SbnMaster> SbnMasters { get; set; }
+        public DbSet<AssetTransaction> AssetTransactions{ get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-			optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=vb2_sbn;Username=postgres;Password=kelompok_sbn;");
-        }
+            // Load configuration directly as per your example
+            string connectionString = AppSettings.GetConnectionString("Default");
+            optionsBuilder.UseNpgsql(connectionString);                           // Builds the configuration
 
+        }
     }
 }
